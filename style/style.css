@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-html {
 
-}
 body {
-
     margin:0; !important;
     background-color: blanchedalmond;
+}
+
+#wad {
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 12%;
+    z-index: 1;
+    text-align: center;
 }
 
 h1 {
@@ -17,8 +22,6 @@ h1 {
     position: absolute;
 }
 
-
-
 #plant-info {
     margin-top: 80px;
     height: 610px;
@@ -28,7 +31,7 @@ h1 {
 }
 
 #plant-gallery {
-    margin-top: 0px;
+    margin-top: 80px;
     width: 35%;
 }
 
@@ -113,7 +116,6 @@ th, td {
     padding: 15px;
 }
 
-
 #container {
     display: flex;                  /* establish flex container */
     flex-direction: row;            /* default value; can be omitted */
@@ -122,17 +124,14 @@ th, td {
 }
 
 @media screen and (max-width: 1550px) {
-
     #plant-gallery {
         width: 350px;
     }
     #plant-name {
         width: 25%;
     }
-    #plant-name li {
-
-
-
+    #wad {
+        margin-left: 5%;
     }
     #plant-info {
         width: 25%;
@@ -160,4 +159,3 @@ th, td {
         margin-top: 2%;
     }
 }
-
