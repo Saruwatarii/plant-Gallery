@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html {
+
+}
+body {
+
+    margin:0; !important;
+    background-color: blanchedalmond;
+}
 
 h1 {
     margin-bottom: 22px;
@@ -9,12 +17,10 @@ h1 {
     position: absolute;
 }
 
-body {
- background-color: blanchedalmond;
-}
+
 
 #plant-info {
-    margin-top: 4.3%;
+    margin-top: 80px;
     height: 610px;
     width: 20%;
     background-color: white;
@@ -23,10 +29,11 @@ body {
 
 #plant-gallery {
     margin-top: 0px;
+    width: 35%;
 }
 
 #plant-name {
-    margin-top: 4.3%;
+    margin-top: 80px;
     width: 20%;
     height: 610px;
     background-color: white;
@@ -38,6 +45,8 @@ ul {
 }
 
 ul li {
+    font-size: 20px;
+    text-align: center;
     margin: 10px;
     list-style-type: none;
     line-height: 2.5;
@@ -51,8 +60,7 @@ ul li {
 
 .grouping {
     float:left;
-    width: 640px;
-    height: 480px;
+
     margin: 4%;
 }
 .full-img, .displayed-img {
@@ -66,7 +74,6 @@ ul li {
     position: absolute;
     top: 0;
     left: 0;
-    width: 640px;
     height: 480px;
     background-color: rgba(0,0,0,0);
 }
@@ -105,3 +112,52 @@ th, td {
     width: 50%;
     padding: 15px;
 }
+
+
+#container {
+    display: flex;                  /* establish flex container */
+    flex-direction: row;            /* default value; can be omitted */
+    flex-wrap: nowrap;              /* default value; can be omitted */
+    justify-content: space-between; /* switched from default (flex-start, see below) */
+}
+
+@media screen and (max-width: 1550px) {
+
+    #plant-gallery {
+        width: 350px;
+    }
+    #plant-name {
+        width: 25%;
+    }
+    #plant-name li {
+
+
+
+    }
+    #plant-info {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #container{
+        display: inline-table;
+    }
+    #plant-gallery {
+        width: 40%;
+        float: right;
+    }
+    #plant-name {
+        width: 40%;
+        float: left;
+    }
+    #plant-name li {
+        margin: 7%;
+    }
+    #plant-info {
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 2%;
+    }
+}
+
